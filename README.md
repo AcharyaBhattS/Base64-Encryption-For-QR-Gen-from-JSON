@@ -1,4 +1,4 @@
-# Python_QR_Code_Generator_Base64
+# Python_QR_Code_Gen_JSON_Base64_Encryption
 #### Generate QR Code in Python by converting JSON content to Base64 encrypted content and save as .svg image file.
 
 ### Requirements:
