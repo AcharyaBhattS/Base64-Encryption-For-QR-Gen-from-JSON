@@ -13,10 +13,10 @@ def QR_Gen_PyQrCode(encoded_data):
     # Generate QR code
     genQR = pyqrcode.create(encoded_data)
     
-    # Create and save the svg file naming "myqr.svg" (H = W ~ 120)
+    # Create and save the svg file naming "invoice.svg" (H = W ~ 120)
     genQR.svg("invoice.svg", scale = 1.55844155844)
 
-    # Create and save the png file naming "myqr.png"
+    # Create and save the png file naming "invoice_qr.png"
     genQR.png('invoice_qr.png', scale = 1.55844155844)
     
 
