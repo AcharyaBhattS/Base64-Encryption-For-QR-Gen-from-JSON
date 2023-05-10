@@ -9,15 +9,15 @@ import png
 
 # Using pyqrcode:
 # Generate .svg file for HTML format
-def QR_Gen_PyQrCode(encoded_data1):
+def QR_Gen_PyQrCode(encoded_data):
     # Generate QR code
-    url = pyqrcode.create(encoded_data1)
+    genQR = pyqrcode.create(encoded_data)
     
     # Create and save the svg file naming "myqr.svg" (H = W ~ 120)
-    url.svg("invoice.svg", scale = 1.55844155844)
+    genQR.svg("invoice.svg", scale = 1.55844155844)
 
     # Create and save the png file naming "myqr.png"
-    url.png('invoice_qr.png', scale = 1.55844155844)
+    genQR.png('invoice_qr.png', scale = 1.55844155844)
     
 
 
